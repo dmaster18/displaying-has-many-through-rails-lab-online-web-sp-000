@@ -2,6 +2,5 @@ class Appointment < ApplicationRecord
   belongs_to :doctor
   belongs_to :patient
   
-  
-  def 
+  def convert_time
 end
