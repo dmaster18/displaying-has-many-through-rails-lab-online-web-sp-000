@@ -5,7 +5,7 @@ Patient: <%= @patient.name %>
 <% @patient.appointments.each do |appointment| %>
   <li> Time: <%= appointment.appointment_datetime %>
     <ul>
-      <li> Doctor: <%= link_to appointment.doctor.name, doctor_path(doctor.id) %> </li>
+      <li> Doctor: <%= link_to appointment.doctor.name, "../doctors/show/#{appointment.doctor.id} %> </li>
     </ul>
   </li>
 <% end %>
