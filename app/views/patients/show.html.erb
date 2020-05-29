@@ -3,7 +3,7 @@ Patient: <%= @patient.name %>
 <ol>
 
 <% @patient.appointments.each do |appointment| %>
-  <li> Time: <%= appointment.appointment_datetime %>
+  <li> Time: <%= appointment.convert_time %>
     <ul>
       <li> Doctor: <%= link_to appointment.doctor.name, "../doctors/show/#{appointment.doctor.id} %> </li>
     </ul>
