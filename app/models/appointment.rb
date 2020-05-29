@@ -3,4 +3,5 @@ class Appointment < ApplicationRecord
   belongs_to :patient
   
   def convert_time
+  end
 end
