@@ -7,7 +7,7 @@ Department: <%= @doctor.department %>
 <% @doctor.appointments.each do |appointment| %>
   <li> Appointment Time: <%= appointment.convert_time %>
     <ul>
-      <li> Patient: <%= link_to appointment.patient.name, patient_pathappointment.patient.id}" %> </li>
+      <li> Patient: <%= link_to appointment.patient.name, patient_path(appointment.patient.id) %> </li>
     </ul>
   </li>
 <% end %>
