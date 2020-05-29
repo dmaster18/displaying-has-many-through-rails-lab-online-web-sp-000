@@ -7,6 +7,7 @@ class Appointment < ApplicationRecord
     month = time.month
     day = time.day
     year = time.year
+    
   
   end
 end
