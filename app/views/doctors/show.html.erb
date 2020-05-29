@@ -1,0 +1,20 @@
+Doctor: <%= @doctor.name %> <br>
+
+Department: <%= @doctor.department %>
+
+<ol>
+
+<% @doctor.appointments.each do |appointment| %>
+  <li> Appointment Time: <%= appointment.appointment_datetime %>
+    <ul>
+      <li> Patient: <%= link_to appointment.patient.name, "../patients/show/#{appointment.patient.id}" %> </li>
+    </ul>
+  </li>
+<% end %>
+
+</ol>
+
+
+<%#=Create a Doctor#show page that displays the doctor's name,
+department, and appointments, with each appointment's date, time,
+and patient name (linking to the patient's show page). %>
