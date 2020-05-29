@@ -1,8 +1,8 @@
 Time: <%= @appointment.convert_time %> <br>
 
-Patient: <%= link_to @appointment.patient.name, patient_path(O %> <br>
+Patient: <%= link_to @appointment.patient.name, patient_path(appointment.patient.id) %> <br>
 
-Doctor: <%= @appointment.doctor.name %> <br>
+Doctor: <%= link_to @appointment.doctor.name, doctor_path(appointment.doctor.id) %> <br>
 
 
 
