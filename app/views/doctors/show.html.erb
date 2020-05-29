@@ -5,7 +5,7 @@ Department: <%= @doctor.department %>
 <ol>
 
 <% @doctor.appointments.each do |appointment| %>
-  <li> Appointment Time: <%= appointment.appointment_datetime %>
+  <li> Appointment Time: <%= appointment.convert_time %>
     <ul>
       <li> Patient: <%= link_to appointment.patient.name, "../patients/show/#{appointment.patient.id}" %> </li>
     </ul>
