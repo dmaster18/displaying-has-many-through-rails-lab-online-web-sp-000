@@ -61,6 +61,10 @@ class Appointment < ApplicationRecord
       hour = 11
     end
 
+    if min == 0
+      min = 00
+    end  
+
     "#{month_name} #{day}, #{year} at #{hour}:#{min}"
   end
 
